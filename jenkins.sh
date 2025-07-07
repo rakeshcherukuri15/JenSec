@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 case $1 in
 install)
                 echo "Jenkins is installed"
