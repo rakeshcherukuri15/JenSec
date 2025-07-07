@@ -1,7 +1,7 @@
-#!/bin/bash
 case $1 in
-install)
-                echo "Jenkins is installed"
+                install)
+                echo "Jenkins is installe"
+#!/bin/bash		
 sudo apt update
 sudo apt install fontconfig openjdk-21-jre
 sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
@@ -18,14 +18,14 @@ sudo apt-get install Jenkins
                 echo "jenkins stopped"
                 ;;
                 restart)
-systemctl restart jenkins
-echo "jenkins is restarted"
-;;
-start)
+        systemctl restart jenkins
+    echo "jenkins is restarted"
+                ;;
+                start)
         systemctl start jenkins
         echo "jenkins started"
         ;;
-*)
+                *)
         echo "please pass correct argument.."
         echo "usage : sh $0 is start|stop|install|restart :"
         ;;
